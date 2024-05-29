@@ -23,3 +23,20 @@ When converting videos or transferring them between devices, the original creati
    ```sh
    git clone https://github.com/yourusername/video-metadata-date-restoration.git
    cd video-metadata-date-restoration
+3. **Open PowerShell as Administrator**
+   - Press Win + X and select Windows PowerShell (Admin).
+4. **Edit the Script Path**
+   - Open UpdateMediaCreationDates.ps1 in a text editor.
+   - Update the $directoryPath variable with the path to your video files directory.
+5. **Run the Script**
+   - In the PowerShell window, navigate to the script directory
+   ```cd C:\path\to\your\script```
+   - Execute the script:
+   ```.\UpdateMediaCreationDates.ps1```
+
+## Notes
+   - Ensure your filenames are in the format YYYYMMDD HHMMSS.mp4 for the script to work correctly.
+   - The script creates a temporary file with the prefix updated_ before renaming it back to the original filename.
+
+## License
+  - This project is licensed under the MIT License - see the LICENSE file for details.
